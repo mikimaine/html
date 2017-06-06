@@ -37,5 +37,16 @@
     "files": [
       "src/helpers.php"
     ]
-  }
+  },
+  "extra": {
+     "laravel": {
+         "providers": [
+             "Collective\\Html\\HtmlServiceProvider"
+         ],
+          "aliases": {
+              "Form": "Collective\\Html\\FormFacade",
+              "Html": "Collective\\Html\\HtmlFacade"
+          }
+      }
+    }
 }
